@@ -63,7 +63,6 @@ export default function ZoomableExternalSvg({
             const viewportSel = d3.select(viewport);
 
             const syncVisibility = (k) => {
-                console.log(`zoom: ${k}`);
                 // Elements may use:
                 // data-min-zoom="2"
                 // data-max-zoom="5"
@@ -83,7 +82,6 @@ export default function ZoomableExternalSvg({
             };
 
             const syncColor = (k) => {
-                console.log(`zoom: ${k}`);
                 // Elements may use:
                 // data-min-zoom="2"
                 // data-max-zoom="5"
@@ -100,7 +98,6 @@ export default function ZoomableExternalSvg({
                         colorAttrs.forEach(attr => {
                             const kk = Number(attr.name.match(/data-color(-(.*))?/)[2]?.replace('_', '.') || 0);
                             if (k >= kk) {
-                                console.log(attr.name, attr.value);
                                 this.style.fill = attr.value;
                             }
                         });
@@ -117,7 +114,6 @@ export default function ZoomableExternalSvg({
                         colorAttrs.forEach(attr => {
                             const kk = Number(attr.name.match(/data-stroke(-(.*))?/)[2]?.replace('_', '.') || 0);
                             if (k >= kk) {
-                                console.log(attr.name, attr.value);
                                 this.style.stroke = attr.value;
                             }
                         });
@@ -155,7 +151,6 @@ export default function ZoomableExternalSvg({
         };
     }, [url, minZoom, maxZoom]);
 
-    console.log(hostRef.current);
     return (
         <div
             ref={hostRef}
