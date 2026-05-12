@@ -1,13 +1,14 @@
-import Barchart from './components/Barchart';
 import './App.css';
-import D3DnDWorldMapStarter from "./components/D3DnDWorldMapStarter";
+import ZoomableExternalSvg from "./components/ZoomableExternalSvg";
+
+import delkareth from './components/delkareth.svg';
 
 function App() {
-  return (
-    <div className="App">
-      <D3DnDWorldMapStarter />
-    </div>
-  );
+    return (
+        <div className="App">
+            <ZoomableExternalSvg url={delkareth}/>
+        </div>
+    );
 }
 
 export default App;
