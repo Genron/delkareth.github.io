@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.38a399bf.js",
-    "static/js/453.094c5c94.chunk.js": "/static/js/453.094c5c94.chunk.js",
-    "static/media/delkareth.svg": "/static/media/delkareth.bced2e3ea31cff07f32ffda6dcab237b.svg",
-    "index.html": "/index.html",
-    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.38a399bf.js.map": "/static/js/main.38a399bf.js.map",
-    "453.094c5c94.chunk.js.map": "/static/js/453.094c5c94.chunk.js.map"
+    "main.css": "/delkareth.github.io/static/css/main.f855e6bc.css",
+    "main.js": "/delkareth.github.io/static/js/main.16d70e3c.js",
+    "static/js/453.094c5c94.chunk.js": "/delkareth.github.io/static/js/453.094c5c94.chunk.js",
+    "static/media/delkareth.svg": "/delkareth.github.io/static/media/delkareth.bced2e3ea31cff07f32ffda6dcab237b.svg",
+    "index.html": "/delkareth.github.io/index.html",
+    "main.f855e6bc.css.map": "/delkareth.github.io/static/css/main.f855e6bc.css.map",
+    "main.16d70e3c.js.map": "/delkareth.github.io/static/js/main.16d70e3c.js.map",
+    "453.094c5c94.chunk.js.map": "/delkareth.github.io/static/js/453.094c5c94.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.38a399bf.js"
+    "static/js/main.16d70e3c.js"
   ]
 }
