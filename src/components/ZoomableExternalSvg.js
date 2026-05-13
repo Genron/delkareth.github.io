@@ -81,6 +81,14 @@ export default function ZoomableExternalSvg({
                     });
             };
 
+          const syncStroke = (k) => {
+                viewportSel
+                    .selectAll("*")
+                    .each(function () {
+                        this.style.strokeWidth = k;
+                    });
+            };
+
             const syncColor = (k) => {
                 // Elements may use:
                 // data-min-zoom="2"
@@ -128,6 +136,7 @@ export default function ZoomableExternalSvg({
                         currentK = event.transform.k;
                         syncVisibility(event.transform.k);
                         syncColor(event.transform.k);
+                      syncStroke(event.transform.k);
                         host.style.backgroundColor = viewportSel.select('#background').style('fill');
                     }
                 });
@@ -135,6 +144,7 @@ export default function ZoomableExternalSvg({
             root.call(zoom);
             syncVisibility(1);
             syncColor(1);
+          syncStroke(1);
             host.style.backgroundColor = viewportSel.select('#background').style('fill');
 
             cleanup = () => {
