@@ -85,7 +85,7 @@ export default function ZoomableExternalSvg({
                 viewportSel
                     .selectAll("*")
                     .each(function () {
-                        this.style.strokeWidth = 1/k;
+                        this.style.strokeWidth = 1/(maxZoom-1);
                     });
             };
 
